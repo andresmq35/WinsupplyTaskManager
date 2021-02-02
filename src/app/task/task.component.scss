@@ -1,0 +1,83 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+.hideChildren > div.form-group{
+    display: none;
+}
+.showChildren > div.form-group {
+    display: inline;
+}
+.task-name-header {
+    color: black;
+    font-size: large;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: bold;
+
+}
+.task-name-date {
+    color: black;
+    padding-right: 1rem;
+}
+.task-name-assignee {
+    color: black;
+    padding-right: 1rem;
+}
+.task-add {
+    position:relative;
+    top:1rem;
+    cursor:pointer;
+}
+.task-edit-icon {
+    position:relative;
+    top:1rem;
+    cursor:pointer;
+}
+.show-hide-div {
+    text-decoration: none; 
+    z-index: 1000; 
+    background-color: lightgrey;
+    margin-bottom:2rem;
+    padding-bottom: 1rem;
+    border-radius: .5rem;
+    border: .1rem solid #eee;
+    background-color: #fafafa;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 .2rem .8rem rgba(0, 0, 0, 0.35);    
+}
+input, label, .alert.alert-danger, button {
+    width: 90%;
+    margin-left: 1rem;
+}
+
+button {
+    background-color: rgb(12, 12, 34);
+    color: white;
+}
+
+button:hover {
+    background-color:rgb(94, 94, 102);
+    color: white;
+}
+
+button[disabled]:hover {
+    background-color:rgb(196, 103, 103);
+    color: black;
+}
+
+br {
+    border-bottom:.1rem solid black;
+}
+h2 {
+    margin-top:.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: large;
+    }
+}
